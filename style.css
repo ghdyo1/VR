@@ -28,3 +28,58 @@ header h1 {
         padding-bottom: 0;
     }
 }
+
+.card {
+    width: 500px;
+    height: 70px;
+    border-top: solid #666666 3px;
+    border-bottom: solid #666666 3px;
+    border-radius: 5px;
+    background-color: rgba(88, 88, 88, 0.6);
+    margin-top: 20px;
+    animation-name: card-reveal;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.card:nth-child(2) {
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.card:nth-child(3) {
+    opacity: 0;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.card p {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+.card button {
+    width: 70px;
+    height: 30px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    background-color: #00ff00;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+@keyframes card-reveal {
+    from {
+        opacity: 0;
+        margin-left: 100px;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
