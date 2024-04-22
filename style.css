@@ -40,21 +40,20 @@ header h1 {
     animation-name: card-reveal;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .card:nth-child(2) {
     opacity: 0;
     animation-delay: 0.5s;
-    animation-fill-mode: forwards;
 }
 
 .card:nth-child(3) {
     opacity: 0;
     animation-delay: 1s;
-    animation-fill-mode: forwards;
 }
 
-.card p {
+.vr-name {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -80,6 +79,37 @@ header h1 {
     }
     to {
         opacity: 1;
-        margin-left: 0px;
+        margin-left: 20px;
     }
+}
+
+.free {
+    margin-top: 100px;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    width: 500px;
+    margin-left: 20px;
+}
+
+button {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #555555;
+    border: solid 2px #000000;
+}
+
+video {
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+    filter: brightness(50%);
+}
+
+video:first-child {
+    margin-left: 20px;
 }
