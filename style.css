@@ -159,12 +159,17 @@ video {
 }
 
 .vr img {
+    opacity: 0;
     z-index: 1;
     width: 70px;
     height: 40px;
     position: absolute;
     left: 8px;
     filter: brightness(50%);
+    animation-name: rickroll;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .vr img:nth-child(4) {
@@ -193,4 +198,13 @@ video {
 .vrpro img {
     width: 165px;
     left: 6px;
+}
+
+@keyframes rickroll {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
