@@ -103,13 +103,21 @@ button {
     border: solid 2px #000000;
 }
 
+.vr {
+    height: 80px;
+    width: 200px;
+    margin-left: 20px;
+    background-color: #aaaaaa;
+    border: solid 10px black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 video {
     width: 75px;
     height: 75px;
     border-radius: 75px;
     filter: brightness(50%);
-}
-
-video:first-child {
-    margin-left: 20px;
 }
