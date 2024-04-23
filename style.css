@@ -167,7 +167,7 @@ video {
     left: 8px;
     filter: brightness(50%);
     animation-name: rickroll;
-    animation-duration: 20s;
+    animation-duration: 30s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
