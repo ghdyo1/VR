@@ -87,19 +87,23 @@ header h1 {
 
 .free {
     margin-top: 100px;
+    opacity: 0;
+    animation-name: card-reveal;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 p {
     font-family: "Open Sans", sans-serif;
     color: #ffffff;
     width: 500px;
-    margin-left: 20px;
 }
 
 button {
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
-    margin-left: 20px;
     margin-top: 20px;
     background-color: #555555;
     border: solid 2px #000000;
@@ -108,7 +112,6 @@ button {
 .vr {
     height: 80px;
     width: 200px;
-    margin-left: 20px;
     background-color: #aaaaaa;
     border: solid 10px black;
     border-radius: 30px;
@@ -122,4 +125,36 @@ video {
     height: 75px;
     border-radius: 75px;
     filter: brightness(50%);
+}
+
+.warn-wrapper {
+    opacity: 0;
+    background-color: rgba(255, 88, 0, 0.5);
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-top: #ff6600 solid 3px;
+    border-bottom: #ff6600 solid 3px;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.warn {
+    color: #ff6600;
+    margin-left: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+}
+
+@keyframes muhosransk {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
