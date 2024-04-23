@@ -33,7 +33,7 @@ header h1 {
 
 .card {
     width: 500px;
-    height: 70px;
+    height: 80px;
     border-top: solid #666666 3px;
     border-bottom: solid #666666 3px;
     border-radius: 5px;
@@ -59,8 +59,9 @@ header h1 {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
+    width: 300px;
     margin-left: 20px;
-    margin-top: 2px;
+    margin-top: 5px;
 }
 
 .card button {
@@ -71,7 +72,7 @@ header h1 {
     background-color: #00ff00;
     border-radius: 15px;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 @keyframes card-reveal {
@@ -150,11 +151,46 @@ video {
     font-weight: bolder;
 }
 
-@keyframes muhosransk {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.vr2, .vr3, .vrpro {
+    position: relative;
+    left: 200px;
+    bottom: 62px;
+    height: 70px;
+}
+
+.vr img {
+    z-index: 1;
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    left: 8px;
+    filter: brightness(50%);
+}
+
+.vr img:nth-child(4) {
+    left: 97px;
+}
+
+.vr3 img:nth-child(6) {
+    left: 186px;
+}
+
+.glass {
+    width: 75px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #000000;
+}
+
+.vr3 {
+    width: 290px;
+}
+
+.vrpro .glass {
+    width: 165px;
+}
+
+.vrpro img {
+    width: 165px;
+    left: 6px;
 }

@@ -1,5 +1,5 @@
-let video1 = document.querySelector("video:first-child");
-let video2 = document.querySelector("video:last-child");
+let video1 = document.querySelector(".vid:first-child");
+let video2 = document.querySelector(".vid:last-child");
 let btn = document.querySelector("#btn");
 let timerP = document.querySelector("#timerP");
 let timerValue = 19;
