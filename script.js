@@ -13,6 +13,7 @@ let view3 = document.querySelector("#view3");
 let vr2 = document.querySelector(".vr2");
 let vr3 = document.querySelector(".vr3");
 let vrpro = document.querySelector(".vrpro");
+let rickrolls = document.querySelector(".vr img");
 
 function end(){
     video1.pause();
@@ -41,6 +42,7 @@ function viewFunc1(){
     view1.style.display = "none";
     buy1.style.display = "inline-block";
     vr2.style.animationName = "card-reveal";
+    rickrolls.style.animationName = "rickroll";
 }
 function viewFunc2(){
     view2.style.display = "none";

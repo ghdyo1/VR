@@ -168,7 +168,7 @@ video {
     height: 40px;
     position: absolute;
     left: 8px;
-    filter: brightness(50%);
+    filter: brightness(20%);
     animation-name: rickroll;
     animation-duration: 30s;
     animation-iteration-count: 1;
