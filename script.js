@@ -7,6 +7,12 @@ let buy1 = document.querySelector("#buy1");
 let buy2 = document.querySelector("#buy2");
 let buy3 = document.querySelector("#buy3");
 let warn = document.querySelector(".warn-wrapper")
+let view1 = document.querySelector("#view1");
+let view2 = document.querySelector("#view2");
+let view3 = document.querySelector("#view3");
+let vr2 = document.querySelector(".vr2");
+let vr3 = document.querySelector(".vr3");
+let vrpro = document.querySelector(".vrpro");
 
 function end(){
     video1.pause();
@@ -31,8 +37,26 @@ function trial(){
 function muhosransk(){
     warn.style.animationName = "card-reveal";
 }
+function viewFunc1(){
+    view1.style.display = "none";
+    buy1.style.display = "inline-block";
+    vr2.style.animationName = "card-reveal";
+}
+function viewFunc2(){
+    view2.style.display = "none";
+    buy2.style.display = "inline-block";
+    vr3.style.animationName = "card-reveal";
+}
+function viewFunc3(){
+    view3.style.display = "none";
+    buy3.style.display = "inline-block";
+    vrpro.style.animationName = "card-reveal";
+}
 
 btn.addEventListener("click", trial);
 buy1.addEventListener("click", muhosransk);
 buy2.addEventListener("click", muhosransk);
 buy3.addEventListener("click", muhosransk);
+view1.addEventListener("click", viewFunc1);
+view2.addEventListener("click", viewFunc2);
+view3.addEventListener("click", viewFunc3);
