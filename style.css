@@ -15,9 +15,11 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
     animation-name: header;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes header {
@@ -219,4 +221,25 @@ video {
 
 .view-btn {
     width: 120px;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+a {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+
+footer p {
+    opacity: 0;
+    width: auto;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
