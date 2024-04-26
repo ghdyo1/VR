@@ -70,7 +70,6 @@ header h1 {
 }
 
 .card button {
-    width: 70px;
     height: 30px;
     color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -125,4 +124,24 @@ footer p {
     margin-left: 20px;
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
+}
+
+.card img {
+    width: 150px;
+    position: relative;
+    left: 280px;
+    bottom: 58px;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.buy-btn {
+    width: 70px;
+    display: none;
+}
+
+.view-btn {
+    width: 120px;
 }
