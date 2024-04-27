@@ -42,15 +42,21 @@ header h1 {
     background-color: rgba(88, 88, 88, 0.6);
     margin-top: 20px;
     opacity: 0;
-    animation-name: card-reveal;
     animation-duration: 1s;
     animation-delay: 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
+.card:nth-child(1) {
+    animation-name: card-reveal;
+}
+
 .card:nth-child(2) {
-    animation-delay: 1s;
+    opacity: 0s;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes card-reveal {

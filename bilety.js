@@ -5,6 +5,7 @@ let view2 = document.querySelector("#view2");
 let ticket = document.querySelector("#ticketID")
 let bubli = document.querySelector("#bubliID")
 let warn = document.querySelector(".warn-wrapper");
+let card2 = document.querySelector(".card:nth-child(2)")
 
 function buy(){
     warn.style.animationName = "card-reveal";
@@ -18,6 +19,7 @@ function ticketView(){
     ticket.style.animationName = "card-reveal";
     view.style.display = "none";
     btn.style.display = "block";
+    card2.style.animationName = "card-reveal";
 }
 function bubliView(){
     bubli.style.animationName = "card-reveal";
